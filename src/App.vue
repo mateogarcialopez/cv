@@ -1,28 +1,33 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div>
+      <ul id="menu" class="d-flex justify-content-around">
+        <li><a href="#">Acerca</a></li>
+        <li><a href="#">Experiencia</a></li>
+        <li><a href="#">Habilidades</a></li>
+        <li><a href="#">Portafolio</a></li>
+        <li><a href="#">Educación</a></li>
+      </ul>
+      <!--fim menu-->
+    </div>
+      <About style="margin-bottom: 500px;" />
+      <Experience />
   </div>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
 
+<script>
+import About from './components/About.vue'
+import Experience from './components/Experience.vue'
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    About,
+    Experience
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  @import 'assets/styles/styles.scss'
 </style>
