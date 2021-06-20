@@ -12,6 +12,7 @@
     </div>
       <About style="margin-bottom: 500px;" />
       <Experience />
+      <Skills/>
   </div>
 </template>
 
@@ -19,11 +20,13 @@
 <script>
 import About from './components/About.vue'
 import Experience from './components/Experience.vue'
+import Skills from './components/skill.vue'
 export default {
   name: "App",
   components: {
     About,
-    Experience
+    Experience,
+    Skills
   },
 };
 </script>

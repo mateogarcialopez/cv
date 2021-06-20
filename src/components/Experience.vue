@@ -2,11 +2,7 @@
   <div id="app">
     <div>
       <section id="timeline">
-        <h1>A Flexbox Timeline</h1>
-        <p class="leader">
-          All cards must be the same height and width for space calculations on
-          large screens.
-        </p>
+        <h1>Experiencia Laboral</h1>
         <div class="demo-card-wrapper">
           <div class="demo-card demo-card--step1">
             <div class="head">
@@ -211,10 +207,7 @@ body {
 }
 
 #timeline {
-  padding: 100px 0;
-  background: $background;
-  border-top: $border;
-  border-bottom: $border;
+  background: white;
   h1 {
     text-align: center;
     font-size: 3rem;
@@ -242,7 +235,7 @@ body {
       content: "";
       position: absolute;
       top: 0;
-      bottom: 0;
+      bottom: 213px;
       left: 50%;
       border-left: $border;
       @include mq-lg {
